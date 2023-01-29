@@ -1,15 +1,27 @@
 name: git-action-mkdocs-ci
+run-name: ${{ github.actor }} is deploying `suedbroecker-example` with GitHub Actions
 on:
   push:
     branches:
       - main
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - name: 1-Checkout
+        uses: actions/checkout@v3
+      - name: 2-Setup python
+        uses: actions/setup-python@v4
         with:
-          python-version: 3.x
-      - run: pip install mkdocs-material
-      - run: mkdocs gh-deploy --force
+          python-version: 3.10 
+      - name: 3-Install mkdocs
+        run: pip install mkdocs-material
+      - name: 4-Deploy mkdocs
+        run: mkdocs gh-deploy --force
