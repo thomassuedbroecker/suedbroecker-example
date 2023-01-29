@@ -12,11 +12,15 @@ docs_dir: documentation
 # Navigation
 nav:
   - Introduction: README.md
+  - OpenShift:
+    - OpenShift overview: openshift-overview.md
+  - Operators:
+    - Go Operators overview: go-operators-ovewview.md
 
 ## DO NOT CHANGE BELOW THIS LINE
 
 # Copyright
-# TBD
+# Thomas Suedbroecker
 
 # Theme
 theme:
