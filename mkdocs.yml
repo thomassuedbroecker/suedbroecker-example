@@ -1,11 +1,11 @@
 # Project information
-site_name: Suedbroecker Examples
-site_url: https://thomassuedbroecker.github.io/absolute-beginner-node-red-flow
+site_name: Suedbroecker Example
+site_url: https://www.suedbroecker-example.de
 site_author: Thomas Südbröcker
 
 # Repository
-repo_name: Suedbroecker Examples
-repo_url: https://github.com/thomassuedbroecker/suedbroecker-examples
+repo_name: Suedbroecker Example
+repo_url: https://github.com/thomassuedbroecker/suedbroecker-example
 edit_uri: edit/master/documentation
 docs_dir: documentation
 
