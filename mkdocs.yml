@@ -15,7 +15,7 @@ nav:
   - OpenShift:
     - OpenShift overview: openshift-overview.md
   - Operators:
-    - Go Operators overview: go-operators-ovewview.md
+    - Go Operators overview: go-operators-overview.md
 
 ## DO NOT CHANGE BELOW THIS LINE
 
