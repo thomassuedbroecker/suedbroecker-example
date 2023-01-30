@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main
-# permissions:
+permissions:
+   actions: read/write
 #  contents: read
 #  pages: write
 #  id-token: write
